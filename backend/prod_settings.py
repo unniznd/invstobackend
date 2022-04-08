@@ -10,9 +10,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 
-ALLOWED_HOSTS = ['invstobackend.herokuapp.com','*']
+ALLOWED_HOSTS = ['invstobackend.herokuapp.com']
 
-CSRF_TRUSTED_ORIGINS = ["https://invstobackend.herokuapp.com"]
 with open('secret_key.json') as f:
     secret = json.load(f)
 
