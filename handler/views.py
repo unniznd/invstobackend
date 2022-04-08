@@ -44,7 +44,7 @@ class StockView(ListAPIView):
         else:
             return Response(
                 {"status":"unsuccessful","index":failed}, 
-                status=status.HTTP_201_CREATED
+                status=status.HTTP_206_PARTIAL_CONTENT
             )
    
    
